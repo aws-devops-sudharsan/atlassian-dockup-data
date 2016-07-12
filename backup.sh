@@ -13,7 +13,7 @@ readonly tarball=$BACKUP_NAME-$EXPORT_DATETIME.tar.gz
 tar -cvf $tarball $BACKUP_TAR_OPTION
 
 # Upload the backup to S3 with timestamp
-aws s3 --region $AWS_REGION cp /$tarball s3://$AWS_BUCKET/$PREFIX/$tarball --sse
+aws s3 --region $AWS_REGION cp $tarball s3://$AWS_BUCKET/$PREFIX/$tarball --sse
 
 # Clean up
-rm /$tarball
+rm $tarball
