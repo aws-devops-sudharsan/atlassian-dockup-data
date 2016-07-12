@@ -9,7 +9,7 @@ if [ -n "$CRON_TIME" ]; then
 echo "${CRON_TIME} BACKUP_NAME='$BACKUP_NAME' \
 AWS_REGION='$AWS_REGION' \
 AWS_BUCKET='$AWS_BUCKET' \
-$BACKUP_TAR_OPTION='$BACKUP_TAR_OPTION' \
+BACKUP_TAR_OPTION='$BACKUP_TAR_OPTION' \
 PREFIX='$PREFIX' \
 /bin/bash /backup.sh >> /dockup.log 2>&1" >> /crontab.conf
 
