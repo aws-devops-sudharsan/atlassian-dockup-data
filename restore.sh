@@ -15,5 +15,3 @@ tar -xvf $LAST_BACKUP $RESTORE_TAR_OPTION
 
 # Clean up
 rm $LAST_BACKUP
-
-cd ..
